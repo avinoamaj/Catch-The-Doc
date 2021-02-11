@@ -1,0 +1,330 @@
+﻿body {
+
+    background-color: #BBB8B3;
+    font-family: Calibri;
+}
+
+iframe {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: #7E7970;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+}
+
+    /*כותרת משחק*/
+    header > a > p {
+        font-family: Calibri;
+        font-size: 16pt;
+        font-weight: bold;
+        position: relative;
+        top: -20px;
+        color: white;
+        display: inline-block;
+        direction: rtl;
+    }
+
+.about {
+    font-family: Calibri;
+    font-size: 12pt;
+    position: relative;
+    top: -5px;
+    color: white;
+    display: inline-block;
+    direction: rtl;
+}
+
+#playerIframe {
+    height: 70%;
+    width: 70%;
+    top: 75px;
+}
+
+#logoMachon {
+    position: relative;
+    top: -175px;
+    left: -112px;
+}
+
+#logoPicSize {
+    width: 100px;
+}
+
+.howToPlay {
+    font-family: Calibri;
+    font-size: 12pt;
+    position: relative;
+    top: -5px;
+    color: white;
+    display: inline-block;
+    direction: rtl;
+}
+
+.embed-container {
+    position: relative;
+    top: -422px;
+    left: 206px;
+}
+
+/*לוגו*/
+#logo {
+    width: 40px;
+    height: 40px;
+    padding: 5px 15px;
+    direction: rtl;
+}
+
+#odot {
+    width: 700px;
+    height: 500px;
+    padding: 0 2px;
+    direction: rtl;
+    position: relative;
+    top: -18px;
+    left: 100px;
+}
+
+#howTo {
+    width: 700px;
+    height: 500px;
+    padding: 0 2px;
+    direction: rtl;
+    position: relative;
+    top: 4px;
+    left: 100px;
+}
+
+#howToPlayDiv {
+    width: 700px;
+    height: 500px;
+    padding: 0 2px;
+    direction: rtl;
+    position: absolute;
+    top: 50px;
+    left: -200px;
+}
+
+#nounderlineID {
+    text-decoration: none;
+}
+
+.closeAbout {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.closeHowToPlay {
+    cursor: pointer;
+    z-index: 10;
+}
+
+#closeAb {
+    position: absolute;
+    top: 97px;
+    right: -58px;
+    color: white;
+    font-weight: 900;
+    font-size: 20pt;
+}
+
+#closeHt {
+    position: absolute;
+    top: 109px;
+    right: -64px;
+    color: white;
+    font-weight: 900;
+    font-size: 20pt;
+}
+
+.kishor {
+    position: relative;
+    top: -135px;
+    left: 45px;
+    color: white;
+    font-size: 12pt;
+    font-family: Tahoma;
+}
+
+#ccChart {
+    top: -149px;
+    left: -275px;
+}
+
+nav {
+    margin-top: -70px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            nav ul li a {
+                display: block;
+                color: rgb(30, 104, 177);
+                text-align: right;
+                padding: 3px 10px;
+                font-weight: 400;
+                font-size: 12pt;
+                font-family: Calibri;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-family: Calibri;
+                    direction: rtl;
+                    text-decoration: none;
+                }
+
+.popUp {
+    width: 400px;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+}
+
+.popUp1 {
+    width: 400px;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+th{
+border: solid black 2px;
+}
+
+td{
+    border: solid black 2px;
+    }
